@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Hammer, Zap, Cpu, Droplet, Building, HardHat } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
+import Navbar from "@/components/shared/navbar";
+import Footer from "@/components/shared/footer";
+import Container from "@/components/shared/container";
 
 interface Project {
   id: number;

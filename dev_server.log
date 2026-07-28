@@ -1,0 +1,16 @@
+
+> godtech@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 808ms
+
+ GET /sign-in 200 in 2.4s (next.js: 2.0s, application-code: 414ms)
+ GET /sign-up 200 in 752ms (next.js: 581ms, application-code: 171ms)
+ GET / 200 in 1439ms (next.js: 1275ms, application-code: 163ms)
+ GET /about 200 in 950ms (next.js: 863ms, application-code: 88ms)
+ GET /services 200 in 1097ms (next.js: 945ms, application-code: 152ms)
+ GET /projects 200 in 997ms (next.js: 902ms, application-code: 95ms)
+ GET /contact 200 in 1037ms (next.js: 948ms, application-code: 88ms)
