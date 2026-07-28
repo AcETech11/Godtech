@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, ShieldCheck, Clock, Send } from "lucide-react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Container from "@/components/Container";
+import Navbar from "@/components/shared/navbar";
+import Footer from "@/components/shared/footer";
+import Container from "@/components/shared/container";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
