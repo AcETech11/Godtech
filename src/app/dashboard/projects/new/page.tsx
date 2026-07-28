@@ -123,6 +123,7 @@ export default function NewProject() {
   };
 
   const onSubmit = async (data: ProjectFormData) => {
+    console.log('FORM SUBMITTED');
     if (!coverFile) {
       setSubmitError("Cover image is required.");
       return;

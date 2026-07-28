@@ -28,6 +28,7 @@ const mockProjects: DBProject[] = [
   {
     id: "1",
     title: "Commercial Generator Overhaul",
+    slug: "commercial-generator-overhaul",
     category: "Generator Maintenance",
     location: "Financial District, NYC",
     description: "Fully polished fuel system, recalibrated 2,500kVA backup CAT system, sub-second (0.75s) synchronous ATS power recovery.",
@@ -40,6 +41,7 @@ const mockProjects: DBProject[] = [
   {
     id: "2",
     title: "Penthouse Water Pump Calibration",
+    slug: "penthouse-water-pump-calibration",
     category: "Water Pumps & Hydraulics",
     location: "Park Avenue, Manhattan",
     description: "Integrated quad-booster variable frequency drive pump array with noise decoupling mount and computerized pressure stabilization.",
@@ -52,6 +54,7 @@ const mockProjects: DBProject[] = [
   {
     id: "3",
     title: "High-Voltage Switchgear Retrofit",
+    slug: "high-voltage-switchgear-retrofit",
     category: "Electrical Systems",
     location: "Industrial Center, NJ",
     description: "Solid-state vacuum switchgear with integrated digital protection relays and real-time infrared diagnostic sensors.",

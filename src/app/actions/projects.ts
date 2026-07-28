@@ -65,6 +65,8 @@ interface CreateProjectPayload {
 }
 
 export async function createProjectAction(payload: CreateProjectPayload) {
+  console.log('SERVER ACTION START');
+  console.log('FILES RECEIVED', (payload.galleryImages ? payload.galleryImages.length : 0) + (payload.coverImage ? 1 : 0));
   // Validate request parameters on server side
   const validatedFields = projectFormSchema.safeParse({
     title: payload.title,
@@ -101,11 +103,13 @@ export async function createProjectAction(payload: CreateProjectPayload) {
     // 2. Upload cover image to storage
     let coverImageUrl = "";
     if (payload.coverImage && payload.coverImage.base64Data) {
+      console.log('UPLOAD START');
       coverImageUrl = await uploadImageToStorage(
         payload.coverImage.base64Data,
         payload.coverImage.originalName,
         payload.coverImage.contentType
       );
+      console.log('UPLOAD SUCCESS');
     } else {
       return {
         success: false,
@@ -152,6 +156,7 @@ export async function createProjectAction(payload: CreateProjectPayload) {
     }
 
     const projectId = projectData.id;
+    console.log('DB INSERT SUCCESS');
 
     // 5. Insert multiple gallery images into 'project_images' table if available
     if (galleryImageUrls.length > 0) {

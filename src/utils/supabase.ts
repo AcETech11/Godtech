@@ -5,7 +5,10 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 
 // Browser-safe client for public operations
-export const supabaseClient = createClient(supabaseUrl, supabaseAnonKey);
+export const supabaseClient = createClient(
+  supabaseUrl || 'https://placeholder-url.supabase.co',
+  supabaseAnonKey || 'placeholder-anon-key'
+);
 
 // Server-side admin client for secure DB writes and storage uploads (bypassing RLS constraints when necessary)
 export const getSupabaseAdmin = () => {
