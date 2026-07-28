@@ -1,0 +1,12 @@
+
+> godtech@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+✓ Ready in 588ms
+
+○ Compiling /sign-in ...
+ GET /sign-in 200 in 7.0s (next.js: 6.4s, application-code: 617ms)
+ GET /sign-up 200 in 914ms (next.js: 836ms, application-code: 78ms)
